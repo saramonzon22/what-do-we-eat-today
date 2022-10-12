@@ -1,9 +1,23 @@
 import '../styles/App.scss';
+import { Route, Routes } from "react-router-dom";
+import Header from './Header';
+import Main from './Main';
+
+
+
 
 function App() {
   return (
     <div>
-      <h1>Hola mundo</h1>
+      <body><Routes>
+        <Route path="/" element={
+          <>
+            <Header />
+            <Main />
+          </>}>
+        </Route>
+      </Routes>
+      </body>
     </div>
   );
 }
