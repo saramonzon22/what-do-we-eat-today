@@ -5,7 +5,7 @@ function Header(props) {
         <div className='logo'></div>
         <nav className='nav-header'><ul className='nav-bar'>
             <li ><Link to='/sign-in' className='projects'>Sign in</Link></li>
-            <li ><Link to='/loggin' className='login'>Log in</Link></li>
+            <li ><Link to='/login' className='login'>Log in</Link></li>
 
         </ul></nav>
     </header>

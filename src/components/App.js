@@ -2,6 +2,7 @@ import '../styles/App.scss';
 import { Route, Routes } from "react-router-dom";
 import Header from './Header';
 import Main from './Main';
+import Login from './Login';
 
 
 
@@ -15,6 +16,13 @@ function App() {
             <Header />
             <Main />
           </>}>
+        </Route>
+        <Route path="/login" element={
+          <>
+            <Header />
+            <Login />
+          </>
+        }>
         </Route>
       </Routes>
       </body>
