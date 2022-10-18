@@ -23,6 +23,7 @@
     "start": "node src/index.js",
     "build": "react-scripts build",
     "dev": "nodemon src/index.js",
+    "githubpages": "rm -rf build && rm -rf docs && npm run build && mv build docs && git add docs/* && git commit -m \"Publish in GitHub Pages\" && git push",
     "publish-react": "cd web && npm run build && cd .. && rm -rf ./src/public-react && mv ./web/build ./src/public-react",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
