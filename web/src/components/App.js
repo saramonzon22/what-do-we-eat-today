@@ -69,7 +69,7 @@ const App = () => {
           </>
         }>
         </Route>
-        <Route path="/signin" element={
+        <Route path="/sign-in" element={
           <>
             <SingIn signUpErrorMessage={signUpErrorMessage} sendSingUpToApi={sendSingUpToApi} />
           </>

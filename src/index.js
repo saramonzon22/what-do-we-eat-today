@@ -23,7 +23,7 @@ server.listen(serverPort, () => {
 
 const usersDb = new Database('./src/db/users.db', { verbose: console.log });
 
-server.post('/signIn', (req, res) => {
+server.post('/sign-in', (req, res) => {
   const userData = req.body;
   const userEmail = req.body.email;
 
